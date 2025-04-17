@@ -2,9 +2,9 @@ package com.sais.websocketserver;
 
 import android.util.Log;
 
+import org.java_websocket.server.WebSocketServer;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
-import org.java_websocket.server.WebSocketServer;
 
 import java.net.InetSocketAddress;
 
@@ -38,6 +38,6 @@ public class WebSocketServerImpl extends WebSocketServer {
 
     @Override
     public void onStart() {
-        Log.d("WebSocket", "WebSocket server started!");
+        Log.d("WebSocket", "Server started!");
     }
 }
